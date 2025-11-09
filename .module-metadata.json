@@ -1,0 +1,64 @@
+{
+  "name": "db-module",
+  "version": "0.1.0",
+  "description": "Database abstraction layer with Repository pattern using GORM",
+  "type": "library",
+  "language": "go",
+  "category": "backend",
+  "maintainers": [
+    {
+      "name": "Modsynth Team",
+      "email": "team@modsynth.dev"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/modsynth/db-module.git"
+  },
+  "dependencies": {
+    "runtime": [],
+    "external": [
+      "gorm.io/gorm",
+      "gorm.io/driver/postgres",
+      "gorm.io/driver/mysql",
+      "gorm.io/driver/sqlite"
+    ]
+  },
+  "techStack": [
+    "Go",
+    "GORM",
+    "PostgreSQL",
+    "MySQL",
+    "SQLite"
+  ],
+  "features": [
+    "Multi-database support (PostgreSQL, MySQL, SQLite)",
+    "Repository pattern implementation",
+    "Generic CRUD operations",
+    "Migration support",
+    "Transaction management",
+    "Connection pooling",
+    "Query logging and debugging"
+  ],
+  "api": {
+    "stability": "experimental",
+    "breaking_changes": []
+  },
+  "documentation": {
+    "readme": "README.md",
+    "examples": "examples/",
+    "godoc": true
+  },
+  "testing": {
+    "coverage_threshold": 80,
+    "frameworks": ["testing"]
+  },
+  "tags": [
+    "database",
+    "orm",
+    "gorm",
+    "repository",
+    "postgresql",
+    "mysql"
+  ]
+}
